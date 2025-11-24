@@ -3,6 +3,29 @@ import java.util.Scanner;
 import java.io.File;
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
+        String info;
+        Scoreboard testGame = new Scoreboard("Red", "Blue");
+
+        System.out.println(testGame.getScore());
+        testGame.recordPlay(1);
+        System.out.println(testGame.getScore());
+        testGame.recordPlay(0);
+        System.out.println(testGame.getScore());
+        System.out.println(testGame.getScore());
+        testGame.recordPlay(3);
+        System.out.println(testGame.getScore());
+        testGame.recordPlay(1);
+        testGame.recordPlay(0);
+        System.out.println(testGame.getScore());
+        testGame.recordPlay(0);
+        testGame.recordPlay(4);
+        System.out.println(testGame.getScore());
+        testGame.recordPlay(0);
+
+        Scoreboard match = new Scoreboard("Lions", "Tigers");
+        System.out.println(match.getScore());
+        System.out.println(testGame.getScore());
+
         read();
     }
 
