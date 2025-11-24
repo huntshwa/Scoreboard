@@ -39,4 +39,12 @@ public class Scoreboard {
 
         return team;
     }
+
+    public String getTeam1() {
+        return team1;
+    }
+
+    public String getTeam2() {
+        return team2;
+    }
 }
