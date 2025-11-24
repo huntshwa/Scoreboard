@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.io.File;
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        String info;
+
         Scoreboard testGame = new Scoreboard("Red", "Blue");
 
         System.out.println(testGame.getScore());
